@@ -5,9 +5,96 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #181818;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+header {
+  font-family: 'Helvetica';
+  color: #ffffff;
+  margin: 15px;
+}
+
+.releases-list {
+  margin: 15px;
+  border-top: 1px solid #353535;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.release {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 300px;
+  margin: 15px;
+}
+
+.album {
+  font-family: 'Helvetica';
+  font-size: 14px;
+  color: #ffffff;
+  margin: 15px 0 0 0;
+  height: 25px;
+}
+
+.artist {
+  font-family: 'Helvetica';
+  font-size: 14px;
+  color: #a0a0a0;
+  margin: 15px 0 15px 0;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border: 1px solid white;
+}
+
+@media (min-width: 768px) {
+  .releases-list {
+    display: grid;
+    grid-template-columns: 1fr 230px 230px 1fr;
+    justify-self: center;
+  }
+
+  .release {
+    margin: 0;
+  }
+
+  .release:nth-child(odd) {
+    grid-column-start: 2;
+  }
+
+  .release:nth-child(even) {
+    grid-column-start: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .releases-list {
+    grid-template-columns: 1fr 230px 230px 230px 230px 1fr;
+    padding: 15px 0;
+  }
+
+  .release:nth-child(4n+1) {
+    grid-column-start: 2;
+  }
+
+  .release:nth-child(4n+2) {
+    grid-column-start: 3;
+  }
+
+  .release:nth-child(4n+3) {
+    grid-column-start: 4;
+  }
+
+  .release:nth-child(4n+4) {
+    grid-column-start: 5;
+  }
 }
