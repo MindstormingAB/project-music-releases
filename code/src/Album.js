@@ -1,9 +1,8 @@
 import React from 'react';
 
 const Album = (props) => {
-  // console.log(props);
   return (
-    <p className="album">{props.album}</p>
+    <a href={props.albumUrl} target="_blank" rel="noopener noreferrer" className="album">{props.album}</a>
   )
 };
 

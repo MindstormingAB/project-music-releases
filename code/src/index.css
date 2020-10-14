@@ -41,6 +41,11 @@ header {
   color: #ffffff;
   margin: 15px 0 0 0;
   height: 25px;
+  text-decoration: none;
+}
+
+.album:hover, .artist:hover {
+  text-decoration: underline;
 }
 
 .artist {
@@ -48,6 +53,7 @@ header {
   font-size: 14px;
   color: #a0a0a0;
   margin: 15px 0 15px 0;
+  text-decoration: none;
 }
 
 .image {
@@ -56,11 +62,16 @@ header {
   border: 1px solid white;
 }
 
+.image:hover {
+  opacity: 0.5;
+}
+
 @media (min-width: 768px) {
   .releases-list {
     display: grid;
     grid-template-columns: 1fr 230px 230px 1fr;
     justify-self: center;
+    padding: 15px 0;
   }
 
   .release {
