@@ -94,8 +94,13 @@ header {
   text-align: center;
 }
 
+.play {
+  opacity: 0.5;
+}
+
 .play:hover {
   width: 60px;
+  opacity: 1;
 }
 
 .artists {
