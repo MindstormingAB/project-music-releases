@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Image from 'Image';
-import Artist from 'Artist';
+import Artists from 'Artists';
 import Album from 'Album';
 
 const Release = (props) => {
@@ -9,7 +9,7 @@ const Release = (props) => {
     <article className="release">
       <Image image={props.image[1].url} />
       <Album album={props.album} albumUrl={props.albumUrl} />
-      <Artist artist={props.artist} />
+      <Artists artists={props.artists} />
     </article>
   )
 };
