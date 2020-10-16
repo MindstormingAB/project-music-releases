@@ -21,6 +21,8 @@ const Image = (props) => {
             alt="play"
             width="50"
           />
+          <div className="play-overlay">
+          </div>
         </div>
         <img
           src={Dots}
