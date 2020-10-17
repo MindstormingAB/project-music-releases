@@ -1,5 +1,6 @@
 # Music Releases
-This project was the first time using React and was based on pair programming; I collaborated with Jessica Panditha (https://github.com/jespa374). 
+
+This project was the first time using React and was based on pair programming; I collaborated with [Jessica Panditha](https://github.com/jespa374). 
 The aim was to create a music site displaying images of albums and the album and the artist and use data from an API to display all this information. The focus was components and props and how to structure a website using components and passing in props to these components.
 
 ## The problem
